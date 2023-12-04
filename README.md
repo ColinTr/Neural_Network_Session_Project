@@ -1,5 +1,9 @@
-Directory Structure
---------------------
+# Neural Network Session Project
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+## Directory Structure
+
 To use train.py and visualisation.py, you need to be in the ./src folder. 
 
     .
@@ -28,20 +32,21 @@ To use train.py and visualisation.py, you need to be in the ./src folder.
         ├── train.py                        <- The main entry point of our project
         └── TrainTestManager.py             <- The class which hosts the active learning's logic
    
-Requirements
---------------------
+## Requirements
+
 This project is meant to be used with python 3.7.
 
    
-Usage
---------------------
+## Usage
+
 ### Training :
-The main entry point script is **train.py**. It launches one full active learning loop.\
+
+The main entry point script is **train.py**. It launches one full active learning loop.
 To use it, type :
 
 > cd src (important !)
 > 
-> python3 scripts/train.py model dataset [parameters]\
+> python3 scripts/train.py model dataset [parameters]
 
 The parameters are :\
 --model : The model to use (values : vggnet / lenet) (default = vggnet).\
@@ -54,7 +59,7 @@ The parameters are :\
 --optimizer : The optimizer used to train the model (values : SGD or Adam) (default = Adam).\
 --num_epochs : The number of epochs to train each model (default = 10).\
 --validation : The share of data used for the validation dataset (default = 0.1).\
---lr : The learning rate (default = 0.001).\
+--lr : The learning rate (default = 0.001).
 
 To launch multiple instances of train.py one after the other, edit **runner.py** to fit your needs and simply launch it with :
 > cd src
@@ -62,7 +67,7 @@ To launch multiple instances of train.py one after the other, edit **runner.py**
 > python scripts/runner.py
 
 ### Visualisation :
-There are 3 scripts useful for data visualisation.\
+There are 3 scripts useful for data visualisation.
 
 1) **visualisation.py**
 
@@ -91,4 +96,8 @@ There are 3 scripts useful for data visualisation.\
     > 
     > python scripts/mean-visualisation.py [any number of **mean** result files]
 
+
+## License
+
+This code is released under the MIT license. See the LICENSE file for more information.
     
