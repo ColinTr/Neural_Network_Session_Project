@@ -1,8 +1,23 @@
-# Neural Network Session Project
+<h1 align="center">
+  Neural Network Session Project
+</h1>
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+<div align="center">
+  
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+</div>
 
-## Directory Structure
+
+## 🔍 Overview
+
+This project was carried out during the final year of our Master in Computer Science.
+Here, we explore the implementation of active learning techniques in neural networks, specifically focusing on classification tasks.
+The primary goal was to enhance the learning efficiency by allowing the network to select the most informative data points for labeling, thereby reducing the need for a fully labeled dataset.
+
+For the full context, we recommend the reader to open the <a href="https://github.com/ColinTr/Neural_Network_Session_Project/blob/master/TROISEMAINE_BOUCHARD_INACIO_Rapport_Projet_de_Session_IFT780.pdf">project report</a> (in french).
+
+
+## 📂 Directory Structure
 
 To use train.py and visualisation.py, you need to be in the ./src folder. 
 
@@ -32,12 +47,12 @@ To use train.py and visualisation.py, you need to be in the ./src folder.
         ├── train.py                        <- The main entry point of our project
         └── TrainTestManager.py             <- The class which hosts the active learning's logic
    
-## Requirements
+## 🐍 Requirements
 
 This project is meant to be used with python 3.7.
 
-   
-## Usage
+
+## 💻 Usage
 
 ### Training :
 
@@ -97,7 +112,6 @@ There are 3 scripts useful for data visualisation.
     > python scripts/mean-visualisation.py [any number of **mean** result files]
 
 
-## License
+## ⚖️ License
 
 This code is released under the MIT license. See the LICENSE file for more information.
-    
